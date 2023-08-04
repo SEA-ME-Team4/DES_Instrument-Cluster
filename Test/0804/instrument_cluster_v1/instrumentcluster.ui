@@ -13,6 +13,16 @@
   <property name="windowTitle">
    <string>InstrumentCluster</string>
   </property>
+  <widget class="QLineEdit" name="TestBlock">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>150</y>
+     <width>231</width>
+     <height>91</height>
+    </rect>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
