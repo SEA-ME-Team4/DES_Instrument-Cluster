@@ -23,7 +23,7 @@ public Q_SLOTS:
 
 private:
     Ui::InstrumentCluster *ui;
-    QDBusInterface carinfo;
+    QDBusInterface *carinfo;
     QTimer *timer;
 };
 #endif // INSTRUMENTCLUSTER_H
