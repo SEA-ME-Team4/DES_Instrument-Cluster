@@ -9,8 +9,8 @@ Window {
     height: 400
     color: "black"
     title: qsTr("Instrument Cluster")
-//    property int speed: 100
-//    property int battery_percentage: 100
+    //    property int speed: 100
+    //    property int battery_percentage: 100
     property color gearoff: "#808080"
     property color gearon: "#f7f2f2"
     property int y_offset: 16
@@ -63,7 +63,7 @@ Window {
 
     Image {
         id: left_cluster
-        x: 0
+        x: 146
         y: 43
         fillMode: Image.PreserveAspectFit
         source: "images/left.png"
@@ -119,7 +119,7 @@ Window {
 
     Image {
         id: right_cluster
-        x: 920
+        x: 774
         y: 43
         fillMode: Image.PreserveAspectFit
         source: "images/right.png"
@@ -223,6 +223,15 @@ Window {
         }
 
         Image {
+            id: straight_arrow
+            x: 200
+            y: 79
+            source: "images/arrow-0.png"
+            fillMode: Image.PreserveAspectFit
+            visible: instrumentcluster.whitelight
+        }
+
+        Image {
             id: r_line1
             x: 264
             y: 142
@@ -257,6 +266,7 @@ Window {
             fillMode: Image.PreserveAspectFit
             visible: instrumentcluster.whitelight
         }
+
 
     }
 
