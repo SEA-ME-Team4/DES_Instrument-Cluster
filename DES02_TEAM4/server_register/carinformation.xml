@@ -1,0 +1,29 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+  <interface name="org.team4.Des02.CarInformation">
+    <method name="setSpeed">
+      <arg name="speed" type="d" direction="in"/>
+    </method>
+    <method name="setBattery">
+      <arg name="battery" type="d" direction="in"/>
+    </method>
+    <method name="setTemp">
+      <arg name="temp" type="d" direction="in"/>
+    </method>
+    <method name="setBrake">
+      <arg name="brake" type="b" direction="in"/>
+    </method>
+    <method name="getSpeed">
+      <arg type="d" direction="out"/>
+    </method>
+    <method name="getBattery">
+      <arg type="d" direction="out"/>
+    </method>
+    <method name="getTemp">
+      <arg type="d" direction="out"/>
+    </method>
+    <method name="getBrake">
+      <arg type="b" direction="out"/>
+    </method>
+  </interface>
+</node>
