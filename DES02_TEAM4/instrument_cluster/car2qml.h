@@ -15,10 +15,10 @@ class Car2Qml : public QObject
 
 public:
     explicit Car2Qml(QObject *parent = nullptr);
-    Q_INVOKABLE qreal getSpeed();
-    Q_INVOKABLE qreal getBattery();
-    Q_INVOKABLE qreal getTemp();
-    Q_INVOKABLE bool getBrake();
+    qreal getSpeed();
+    qreal getBattery();
+    qreal getTemp();
+    bool getBrake();
 
 signals:
     Q_INVOKABLE void update2qml();

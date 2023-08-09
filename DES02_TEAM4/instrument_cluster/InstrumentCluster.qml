@@ -6,11 +6,8 @@ Rectangle {
     color: "black"
     width: 1280
     height: 400
-    property color gearP: "#808080"
-    property color gearR: "#808080"
-    property color gearN: "#808080"
-    property color gearD: "#f7f2f2"
 
+    property int timer_interval: 100
     property int speed: 0
     property int battery: 0
     property bool brake: false
@@ -44,7 +41,7 @@ Rectangle {
     }
 
     Timer {
-        interval: 50; running: true; repeat: true   // 50mms frequency update
+        interval: instrumentcluster.timer_interval; running: true; repeat: true   // 50mms frequency update
         onTriggered: instrumentcluster.gui_update() //id window
     }
 

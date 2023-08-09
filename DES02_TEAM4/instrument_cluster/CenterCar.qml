@@ -7,8 +7,8 @@ Image {
     fillMode: Image.PreserveAspectFit
     source: "images/field.png"
 
-    property bool redlight: parent.brake
-    property bool whitelight: (!redlight && (parent.speed!==0.0))
+    property bool redlight: (parent.brake || parent.speed<0)? true : false
+    property bool whitelight: (!redlight && (parent.speed!==0.0))? true : false
 
     Image {
         id: brakelight
@@ -17,6 +17,8 @@ Image {
         fillMode: Image.PreserveAspectFit
         source: "images/car-highlights.png"
         visible: centercar.redlight
+        opacity: centercar.redlight
+        Behavior on opacity { NumberAnimation { duration: 500} }
 
         Image {
             id: brakelineL
@@ -39,6 +41,9 @@ Image {
         x: 137
         y: 142
         visible: centercar.whitelight
+        opacity: centercar.whitelight
+        Behavior on opacity { NumberAnimation { duration: 500} }
+
         Image {
             id: l_line1
             x: 0

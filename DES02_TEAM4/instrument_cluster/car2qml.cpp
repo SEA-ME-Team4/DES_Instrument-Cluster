@@ -1,5 +1,5 @@
 #include "car2qml.h"
-#include <QDebug>
+
 Car2Qml::Car2Qml(QObject *parent) : QObject(parent)
 {
     dbus2car = new QDBusInterface("org.team4.Des02", "/CarInformation", "org.team4.Des02.CarInformation", QDBusConnection::sessionBus());
