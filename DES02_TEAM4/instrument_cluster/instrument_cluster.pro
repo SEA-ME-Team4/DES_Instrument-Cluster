@@ -27,13 +27,10 @@ QML_IMPORT_PATH =
 # Additional import path used to resolve QML modules just for Qt Quick Designer
 QML_DESIGNER_IMPORT_PATH =
 
-# Default rules for deployment.
-qnx: target.path = /tmp/$${TARGET}/bin
-else: unix:!android: target.path = /opt/$${TARGET}/bin
-!isEmpty(target.path): INSTALLS += target
-
-DISTFILES += \
-    images/gauge-gauge-frame-sport-center.png
-
 HEADERS += \
     car2qml.h
+
+# Default rules for deployment.
+target.file = instrument_cluster
+target.path = /home/team4/qt_test
+INSTALLS += target

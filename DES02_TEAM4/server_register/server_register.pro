@@ -25,6 +25,6 @@ SOURCES += \
         main.cpp
 
 # Default rules for deployment.
-qnx: target.path = /tmp/$${TARGET}/bin
-else: unix:!android: target.path = /opt/$${TARGET}/bin
-!isEmpty(target.path): INSTALLS += target
+target.file = server_register
+target.path = /home/team4/qt_test
+INSTALLS += target

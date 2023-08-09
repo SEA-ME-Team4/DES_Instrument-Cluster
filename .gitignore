@@ -1,5 +1,5 @@
 .vscode/
 *.pro.user
-/Test/**/*Debug
-/Test/**/*Release
+/**/*Debug
+/**/*Release
 /build
