@@ -13,6 +13,33 @@ Image {
     property int left_angle: parent.speed + left_angle_offset
 
 
+    Text {
+        x: 48
+        y: 99
+        color: "#808080"
+        text: "mm/s"
+        font.bold: false
+        font.family: "Sarabun"
+        font.pixelSize: 13
+    }
+
+    Image {
+        id: shadow
+        x: -46
+        y: -53
+        width: 452
+        height: 420
+        source: "images/shadow.png"
+        fillMode: Image.PreserveAspectFit
+        transform: [
+            Rotation {
+                origin.x: shadow.width/2
+                origin.y: shadow.height/2
+                angle: leftcluster.left_angle
+            }
+        ]
+    }
+
     Image {
         id: leftneedle
         x: 152
@@ -54,6 +81,7 @@ Image {
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
     }
+
     Text {
         x: 190
         y: 276
@@ -63,4 +91,6 @@ Image {
         font.family: "Sarabun"
         font.bold: false
     }
+
+
 }
