@@ -34,3 +34,5 @@ HEADERS += \
 target.file = instrument_cluster
 target.path = /home/team4/qt_test
 INSTALLS += target
+
+DISTFILES +=
