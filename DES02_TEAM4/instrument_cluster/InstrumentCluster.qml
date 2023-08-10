@@ -7,17 +7,30 @@ Rectangle {
     width: 1280
     height: 400
 
-    property int timer_interval: 100
+    property int timer_interval: 1000/60
+
     property int speed: 0
     property int battery: 0
+    property int temp: 0
     property bool brake: false
 
+    property bool speed_timeout: false
+    property bool battery_timeout: false
+    property bool temp_timeout: false
+    property bool brake_timeout: false
+
     function gui_update(){
-        carinfo.dbus_update() //get data from dbus
+        carinfo.updateVariables()
 
         instrumentcluster.speed = carinfo.speed
         instrumentcluster.battery = carinfo.battery
+        instrumentcluster.temp = carinfo.temp
         instrumentcluster.brake = carinfo.brake
+
+        instrumentcluster.speed_timeout = carinfo.speedstatus
+        instrumentcluster.battery_timeout = carinfo.batterystatus
+        instrumentcluster.temp_timeout = carinfo.tempstatus
+        instrumentcluster.brake_timeout = carinfo.brakestatus
     }
 
     LeftCluster {
@@ -40,9 +53,15 @@ Rectangle {
         y: 160
     }
 
+    StatusIndicator
+    {
+        x: 552
+        y: 134
+    }
+
     Timer {
-        interval: instrumentcluster.timer_interval; running: true; repeat: true   // 50mms frequency update
-        onTriggered: instrumentcluster.gui_update() //id window
+        interval: instrumentcluster.timer_interval; running: true; repeat: true
+        onTriggered: instrumentcluster.gui_update()
     }
 
     Car2Qml{

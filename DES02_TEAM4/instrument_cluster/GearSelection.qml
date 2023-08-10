@@ -3,7 +3,7 @@ import QtQuick 2.0
 Rectangle {
     id: gearselection
     property color color: "#f7f2f2"
-    property int update_interval: 200
+    property int update_interval: 100
     property double gearP: (parent.speed===0 && parent.brake)? 1 : 0.5
     property double gearR: (parent.speed<0)? 1 : 0.5
     property double gearN: (parent.speed===0 && !parent.brake)? 1 : 0.5

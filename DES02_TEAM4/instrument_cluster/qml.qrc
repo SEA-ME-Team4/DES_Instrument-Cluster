@@ -6,5 +6,6 @@
         <file>LeftCluster.qml</file>
         <file>RightCluster.qml</file>
         <file>CenterCar.qml</file>
+        <file>StatusIndicator.qml</file>
     </qresource>
 </RCC>
