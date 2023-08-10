@@ -1,5 +1,11 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>InstrumentCluster.qml</file>
+        <file>GearSelection.qml</file>
+        <file>LeftCluster.qml</file>
+        <file>RightCluster.qml</file>
+        <file>CenterCar.qml</file>
+        <file>StatusIndicator.qml</file>
     </qresource>
 </RCC>

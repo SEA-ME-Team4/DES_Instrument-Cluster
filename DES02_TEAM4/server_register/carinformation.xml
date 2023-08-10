@@ -1,6 +1,18 @@
 <!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
 <node>
   <interface name="org.team4.Des02.CarInformation">
+    <signal name="speedTimeout">
+      <arg name="status" type="b" direction="out"/>
+    </signal>
+    <signal name="batteryTimeout">
+      <arg name="status" type="b" direction="out"/>
+    </signal>
+    <signal name="tempTimeout">
+      <arg name="status" type="b" direction="out"/>
+    </signal>
+    <signal name="brakeTimeout">
+      <arg name="status" type="b" direction="out"/>
+    </signal>
     <method name="setSpeed">
       <arg name="speed" type="d" direction="in"/>
     </method>
