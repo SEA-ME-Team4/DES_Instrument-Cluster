@@ -13,17 +13,12 @@ if __name__ == '__main__':
     car_interface = dbus.Interface(service, "org.team4.Des02.CarInformation")
 
 
-
-
     while True:
         gamepad_input = shanwan_gamepad.read_data()
 
-        throttle = gamepad_input.analog_stick_left.y * 0.5
-        steering = gamepad_input.analog_stick_right.y
-
         left_value = gamepad_input.analog_stick_left.y
 
-
+        # to ignore splashed value
         if -0.0038 > left_value > -0.0039:
             continue
 
