@@ -1,5 +1,6 @@
 # Image Resource from
 # https://doc.qt.io/QtForMCUs-2.5/quickultralite-automotive-example.html
+# https://www.flaticon.com/kr/free-icons/
 QT += quick dbus
 
 CONFIG += c++11

@@ -7,7 +7,7 @@ Rectangle {
     width: 1280
     height: 400
 
-    property int timer_interval: 1000/60
+    property int timer_interval: 1000/120
 
     property int speed: 0
     property int battery: 0
@@ -49,14 +49,15 @@ Rectangle {
     }
 
     CenterCar {
+        id: centerCar
         x: 430
-        y: 160
+        y: 54
     }
 
     StatusIndicator
     {
-        x: 552
-        y: 134
+        x: 512
+        y: 346
     }
 
     Timer {

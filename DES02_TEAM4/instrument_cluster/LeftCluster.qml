@@ -4,7 +4,7 @@ Rectangle{
     id: leftcluster
     color: "black"
 
-    property int update_interval: 100
+    property int update_interval: 200
     property color textcolor: "#f7f2f2"
     property int y_offset: 16
     property int left_angle_offset: -160

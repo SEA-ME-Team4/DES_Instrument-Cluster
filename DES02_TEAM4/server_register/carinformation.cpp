@@ -33,7 +33,7 @@ void CarInformation::setTemp(qreal temp)
 void CarInformation::setBrake(bool brake)
 {
     this->brake = brake;
-    battery_timer.restart();
+    brake_timer.restart();
 }
 
 qreal CarInformation::getSpeed()
