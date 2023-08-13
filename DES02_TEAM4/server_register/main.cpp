@@ -1,6 +1,5 @@
 #include <QCoreApplication>
 #include <QtDBus/QDBusConnection>
-//#include <QThread>
 #include <QDebug>
 
 #include "carinformation.h"

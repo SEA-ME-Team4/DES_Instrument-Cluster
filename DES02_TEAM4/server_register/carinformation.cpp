@@ -15,6 +15,10 @@ CarInformation::CarInformation(QObject *parent) : QObject(parent)
     battery_timer.start();
     temp_timer.start();
     brake_timer.start();
+
+    system_timer = new QTimer(this);
+    system_timer->start(1000.0f/120.0f);
+    connect(system_timer, SIGNAL(timeout()), this, SLOT(onTimeSpend()));
 }
 
 void CarInformation::setSpeed(qreal speed)
@@ -43,6 +47,45 @@ void CarInformation::setBrake(bool brake)
 
 qreal CarInformation::getSpeed()
 {
+    return speed;
+}
+
+qreal CarInformation::getBattery()
+{
+    return battery;
+}
+
+qreal CarInformation::getTemp()
+{
+    return temp;
+}
+
+bool CarInformation::getBrake()
+{
+    return brake;
+}
+
+bool CarInformation::getSpeedStatus()
+{
+    return speed_status;
+}
+
+bool CarInformation::getBatteryStatus()
+{
+    return battery_status;
+}
+
+bool CarInformation::getTempStatus()
+{
+    return temp_status;
+}
+
+bool CarInformation::getBrakeStatus(){
+    return brake_status;
+}
+
+void CarInformation::onTimeSpend()
+{
     if (speed_timer.elapsed()>MAX_INTERVAL && speed_status==false) {
         speed_status = true;
         emit speedTimeout(true);
@@ -51,11 +94,7 @@ qreal CarInformation::getSpeed()
         speed_status = false;
         emit speedTimeout(false);
     }
-    return speed;
-}
 
-qreal CarInformation::getBattery()
-{
     if (battery_timer.elapsed()>MAX_INTERVAL && battery_status==false) {
         battery_status = true;
         emit batteryTimeout(true);
@@ -64,11 +103,7 @@ qreal CarInformation::getBattery()
         battery_status = false;
         emit batteryTimeout(false);
     }
-    return battery;
-}
 
-qreal CarInformation::getTemp()
-{
     if (temp_timer.elapsed()>MAX_INTERVAL && temp_status==false) {
         temp_status = true;
         emit tempTimeout(true);
@@ -77,11 +112,7 @@ qreal CarInformation::getTemp()
         temp_status = false;
         emit tempTimeout(false);
     }
-    return temp;
-}
 
-bool CarInformation::getBrake()
-{
     if (brake_timer.elapsed()>MAX_INTERVAL && brake_status==false) {
         brake_status = true;
         emit brakeTimeout(true);
@@ -90,5 +121,6 @@ bool CarInformation::getBrake()
         brake_status = false;
         emit brakeTimeout(false);
     }
-    return brake;
+
+    emit sendTimeSpend();
 }
