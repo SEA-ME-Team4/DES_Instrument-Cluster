@@ -39,21 +39,25 @@ void Car2Qml::setBrake()
 void Car2Qml::setSpeedStatus(bool status)
 {
     speedstatus = status;
+    emit speedstatusChanged(status);
 }
 
 void Car2Qml::setBatteryStatus(bool status)
 {
     batterystatus = status;
+    emit batterystatusChanged(status);
 }
 
 void Car2Qml::setTempStatus(bool status)
 {
     tempstatus = status;
+    emit tempstatusChanged(status);
 }
 
 void Car2Qml::setBrakeStatus(bool status)
 {
     brakestatus = status;
+    emit brakestatusChanged(status);
 }
 
 qreal Car2Qml::getSpeed()
@@ -76,31 +80,10 @@ bool Car2Qml::getBrake()
     return brake;
 }
 
-bool Car2Qml::getSpeedStatus()
-{
-    return speedstatus;
-}
-
-bool Car2Qml::getBatteryStatus()
-{
-    return batterystatus;
-}
-
-bool Car2Qml::getTempStatus()
-{
-    return tempstatus;
-}
-
-bool Car2Qml::getBrakeStatus()
-{
-    return brakestatus;
-}
-
 void Car2Qml::updateVariables()
 {
     setSpeed();
     setBattery();
     setTemp();
     setBrake();
-    qDebug()<<speedstatus<<batterystatus<<tempstatus<<brakestatus;
 }

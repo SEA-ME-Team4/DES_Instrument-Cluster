@@ -14,10 +14,10 @@ Rectangle {
     property int temp: 0
     property bool brake: false
 
-    property bool speed_timeout: false
-    property bool battery_timeout: false
-    property bool temp_timeout: false
-    property bool brake_timeout: false
+    property bool speed_timeout: true
+    property bool battery_timeout: true
+    property bool temp_timeout: true
+    property bool brake_timeout: true
 
     function gui_update(){
         carinfo.updateVariables()
@@ -26,11 +26,6 @@ Rectangle {
         instrumentcluster.battery = carinfo.battery
         instrumentcluster.temp = carinfo.temp
         instrumentcluster.brake = carinfo.brake
-
-        instrumentcluster.speed_timeout = carinfo.speedstatus
-        instrumentcluster.battery_timeout = carinfo.batterystatus
-        instrumentcluster.temp_timeout = carinfo.tempstatus
-        instrumentcluster.brake_timeout = carinfo.brakestatus
     }
 
     LeftCluster {
@@ -67,5 +62,9 @@ Rectangle {
 
     Car2Qml{
         id: carinfo
+        onSpeedstatusChanged: {instrumentcluster.speed_timeout = status}
+        onBatterystatusChanged: {instrumentcluster.battery_timeout = status}
+        onTempstatusChanged: {instrumentcluster.temp_timeout = status}
+        onBrakestatusChanged: {instrumentcluster.brake_timeout = status}
     }
 }

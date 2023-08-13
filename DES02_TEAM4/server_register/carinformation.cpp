@@ -6,6 +6,11 @@ CarInformation::CarInformation(QObject *parent) : QObject(parent)
     temp = 0.0;
     brake = false;
 
+    speed_status = true;
+    battery_status = true;
+    temp_status = true;
+    brake_status = true;
+
     speed_timer.start();
     battery_timer.start();
     temp_timer.start();
@@ -38,11 +43,12 @@ void CarInformation::setBrake(bool brake)
 
 qreal CarInformation::getSpeed()
 {
-    if (speed_timer.elapsed()>MAX_INTERVAL) {
+    if (speed_timer.elapsed()>MAX_INTERVAL && speed_status==false) {
+        speed_status = true;
         emit speedTimeout(true);
-        qDebug()<<"Speed Update TIMEOUT (over MAXIMUM INTERVAL)";
     }
-    else{
+    else if (speed_timer.elapsed()<=MAX_INTERVAL && speed_status==true) {
+        speed_status = false;
         emit speedTimeout(false);
     }
     return speed;
@@ -50,11 +56,12 @@ qreal CarInformation::getSpeed()
 
 qreal CarInformation::getBattery()
 {
-    if (battery_timer.elapsed()>MAX_INTERVAL) {
+    if (battery_timer.elapsed()>MAX_INTERVAL && battery_status==false) {
+        battery_status = true;
         emit batteryTimeout(true);
-        qDebug()<<"Battery Update TIMEOUT (over MAXIMUM INTERVAL)";
     }
-    else{
+    else if (battery_timer.elapsed()<=MAX_INTERVAL && battery_status==true) {
+        battery_status = false;
         emit batteryTimeout(false);
     }
     return battery;
@@ -62,11 +69,12 @@ qreal CarInformation::getBattery()
 
 qreal CarInformation::getTemp()
 {
-    if (temp_timer.elapsed()>MAX_INTERVAL) {
+    if (temp_timer.elapsed()>MAX_INTERVAL && temp_status==false) {
+        temp_status = true;
         emit tempTimeout(true);
-//        qDebug()<<"Temp Update TIMEOUT (over MAXIMUM INTERVAL)";
     }
-    else{
+    else if (temp_timer.elapsed()<=MAX_INTERVAL && temp_status==true) {
+        temp_status = false;
         emit tempTimeout(false);
     }
     return temp;
@@ -74,11 +82,12 @@ qreal CarInformation::getTemp()
 
 bool CarInformation::getBrake()
 {
-    if (brake_timer.elapsed()>MAX_INTERVAL) {
+    if (brake_timer.elapsed()>MAX_INTERVAL && brake_status==false) {
+        brake_status = true;
         emit brakeTimeout(true);
-//        qDebug()<<"Brake Update TIMEOUT (over MAXIMUM INTERVAL)";
     }
-    else{
+    else if (brake_timer.elapsed()<=MAX_INTERVAL && brake_status==true) {
+        brake_status = false;
         emit brakeTimeout(false);
     }
     return brake;

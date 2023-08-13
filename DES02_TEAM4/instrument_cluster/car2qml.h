@@ -14,11 +14,6 @@ class Car2Qml : public QObject
     Q_PROPERTY(qreal temp READ getTemp)
     Q_PROPERTY(bool brake READ getBrake)
 
-    Q_PROPERTY(bool speedstatus READ getSpeedStatus)
-    Q_PROPERTY(bool batterystatus READ getBatteryStatus)
-    Q_PROPERTY(bool tempstatus READ getTempStatus)
-    Q_PROPERTY(bool brakestatus READ getBrakeStatus)
-
 public:
     explicit Car2Qml(QObject *parent = nullptr);
 
@@ -27,10 +22,12 @@ public:
     qreal getTemp();
     bool getBrake();
 
-    bool getSpeedStatus();
-    bool getBatteryStatus();
-    bool getTempStatus();
-    bool getBrakeStatus();
+signals:
+    void speedstatusChanged(bool status);
+    void batterystatusChanged(bool status);
+    void tempstatusChanged(bool status);
+    void brakestatusChanged(bool status);
+
 
 public slots:
     void setSpeed();
