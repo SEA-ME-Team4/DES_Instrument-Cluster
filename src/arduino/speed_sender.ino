@@ -8,7 +8,7 @@
 #endif
 #define slave 0x0F6
 #define PIN_OUT 3
-#define CUSTOM_DELAY 5000
+#define CUSTOM_DELAY 100
 #define lmillis() ((long)millis())
 // struct can_frame recvMsg;
 struct can_frame canMsg;
@@ -46,9 +46,12 @@ void loop() {
     if (lmillis() - lastAction >= 0) {
         detachInterrupt(digitalPinToInterrupt(PIN_OUT));
         lastAction = lmillis() + CUSTOM_DELAY;
-        float div = CUSTOM_DELAY / 1000;
+        double div = 0.1;
         double rpm = (count*3) / div; //[rpm] 
-        double speed = rpm*3.40; // [mm/s]
+        double speed = rpm*3.40*0.1; // [cm/s]
+        Serial.println("div: "+ String(div));
+        Serial.println("rpm: "+String(rpm));
+        Serial.println("speed: "+String(speed));
         int int1_spd = speed;
         int int2_spd = round((speed - int1_spd)*100);
         canMsg.data[0] = int1_spd/256;
@@ -56,10 +59,12 @@ void loop() {
         canMsg.data[2] = int2_spd;
         // Serial.println("COUNT:"+String(count));
         // Serial.println("RPM:"+String(rpm));
-        Serial.println("SPEED:"+String(speed)+" [mm/s]");
-        Serial.println("int1_spd:"+String(int1_spd)+" [mm/s]");
-        Serial.println("int2_spd:"+String(int2_spd)+" [mm/s]");
-        Serial.println("");
+        if (speed > 0){
+          Serial.println("SPEED:"+String(speed)+" [mm/s]");
+          Serial.println("int1_spd:"+String(int1_spd)+" [mm/s]");
+          Serial.println("int2_spd:"+String(int2_spd)+" [mm/s]");
+          Serial.println("");
+          }
         count = 0;
         attachInterrupt(digitalPinToInterrupt(PIN_OUT), isrCount, RISING);
     }
