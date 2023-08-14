@@ -5,6 +5,7 @@
 #include <QElapsedTimer>
 #include <QtDBus/QDBusInterface>
 #include <QDBusReply>
+#include "carinformation_interface.h"
 
 class Car2Qml : public QObject
 {
@@ -14,10 +15,12 @@ class Car2Qml : public QObject
     Q_PROPERTY(qreal temp READ getTemp)
     Q_PROPERTY(bool brake READ getBrake)
 
-    Q_PROPERTY(bool speedstatus READ getSpeedStatus)
-    Q_PROPERTY(bool batterystatus READ getBatteryStatus)
-    Q_PROPERTY(bool tempstatus READ getTempStatus)
-    Q_PROPERTY(bool brakestatus READ getBrakeStatus)
+    Q_PROPERTY(bool speedstatus READ getSpeedStatus CONSTANT)
+    Q_PROPERTY(bool batterystatus READ getBatteryStatus CONSTANT)
+    Q_PROPERTY(bool tempstatus READ getTempStatus CONSTANT)
+    Q_PROPERTY(bool brakestatus READ getBrakeStatus CONSTANT)
+
+    Q_PROPERTY(bool dbusstatus READ getDbusStatus CONSTANT)
 
 public:
     explicit Car2Qml(QObject *parent = nullptr);
@@ -32,6 +35,21 @@ public:
     bool getTempStatus();
     bool getBrakeStatus();
 
+    bool getDbusStatus();
+
+signals:
+    void speedChanged();
+    void batteryChanged();
+    void tempChanged();
+    void brakeChanged();
+
+    void speedstatusChanged(bool status);
+    void batterystatusChanged(bool status);
+    void tempstatusChanged(bool status);
+    void brakestatusChanged(bool status);
+
+    void dbusstatusChanged(bool status);
+
 public slots:
     void setSpeed();
     void setBattery();
@@ -43,20 +61,25 @@ public slots:
     void setTempStatus(bool status);
     void setBrakeStatus(bool status);
 
-    Q_INVOKABLE void updateVariables();
+    void updateVariables();
+    void checkDbusValid();
 
 private:
-    QDBusInterface *interface;
+    org::team4::Des02::CarInformation *interface;
+
+    QTimer *app_timer;
+
     QDBusReply<qreal> speed;
     QDBusReply<qreal> battery;
     QDBusReply<qreal> temp;
     QDBusReply<bool> brake;
 
-
     bool speedstatus;
     bool batterystatus;
     bool tempstatus;
     bool brakestatus;
+
+    bool dbusstatus;
 };
 
 #endif // CAR2QML_H

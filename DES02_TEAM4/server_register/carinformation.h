@@ -3,9 +3,9 @@
 
 #include <QObject>
 #include <QElapsedTimer>
-#include <QDebug>
+#include <QTimer>
 
-#define MAX_INTERVAL 1000
+#define MAX_INTERVAL 100
 
 class CarInformation : public QObject
 {
@@ -24,17 +24,34 @@ public slots:
     qreal getTemp();
     bool getBrake();
 
+    bool getSpeedStatus();
+    bool getBatteryStatus();
+    bool getTempStatus();
+    bool getBrakeStatus();
+
+    void onTimeSpend();
+
 signals:
+    void sendTimeSpend();
+
     void speedTimeout(bool status);
     void batteryTimeout(bool status);
     void tempTimeout(bool status);
     void brakeTimeout(bool status);
 
 private:
+    QTimer *system_timer;
+
     QElapsedTimer speed_timer;
     QElapsedTimer battery_timer;
     QElapsedTimer temp_timer;
     QElapsedTimer brake_timer;
+
+    bool speed_status;
+    bool battery_status;
+    bool temp_status;
+    bool brake_status;
+
     float speed;
     float battery;
     float temp;

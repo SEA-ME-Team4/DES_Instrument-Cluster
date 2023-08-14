@@ -1,6 +1,5 @@
 #include <QCoreApplication>
 #include <QtDBus/QDBusConnection>
-//#include <QThread>
 #include <QDebug>
 
 #include "carinformation.h"
@@ -16,8 +15,11 @@ int main(int argc, char *argv[])
 
     while (1) {
         if (connection.registerObject("/CarInformation", carinfo)){
-            qDebug()<<"RegisterObject Success";
+            qDebug()<<"Register Object Success";
             break;
+        }
+        else {
+            qDebug()<<"Register Object Failed";
         }
     }
 
@@ -26,8 +28,10 @@ int main(int argc, char *argv[])
             qDebug()<<"Register Service Success";
             break;
         }
+        else {
+            qDebug()<<"Register Service Failed";
+        }
     }
-
 
     return a.exec();
 }
