@@ -1,10 +1,17 @@
 import can
 import dbus
 import dbus.service
+from collections import deque
 
 def receive_can_data():
-    message = can_bus.recv()
-    return message.data
+    try:
+        message = can_bus.recv(timeout=0.2)
+        if message is not None:
+            return message.data
+        else:
+            return None
+    except can.CanError:
+        return None
 
 
 def get_speed_can(data):
@@ -37,9 +44,18 @@ if __name__ == "__main__":
     service = bus.get_object("org.team4.Des02", "/CarInformation")
     car_interface = dbus.Interface(service, "org.team4.Des02.CarInformation")
 
+    queue = deque([0]*5)
+
     while 1:
-      
+        # print(queue) 
         data = receive_can_data() 
-        speed_data = get_speed_can(data)
-        print(speed_data)
-        car_interface.setSpeed(speed_data)
+        if data is not None:
+            queue.popleft()
+            speed_data = get_speed_can(data)
+            queue.append(speed_data)
+
+            ave_value = sum(queue) / 10
+            print(speed_data)
+            car_interface.setSpeed(ave_value)
+        else:
+            print("No CAN data recieved")
