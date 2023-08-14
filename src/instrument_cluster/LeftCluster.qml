@@ -151,7 +151,7 @@ Rectangle{
         x: 190
         y: 276
         color: "gray"
-        text: "mm/s"
+        text: "cm/s"
         font.pixelSize: 13
         font.family: "Sarabun"
         font.bold: false
@@ -200,3 +200,9 @@ Rectangle{
 
 }
 
+
+/*##^##
+Designer {
+    D{i:0;autoSize:true;height:480;width:640}
+}
+##^##*/
