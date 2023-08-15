@@ -2,6 +2,7 @@ import dbus
 import dbus.service
 
 from piracer.vehicles import PiRacerStandard
+from collections import deque
 
 def get_battery():
     voltage = piracer.get_battery_voltage() / 3
@@ -18,20 +19,24 @@ def get_battery():
         battery_percentage = 30 + ((voltage-3.8)/(3.9-3.8))*(55-30)
     elif(voltage>=3.6):
         battery_percentage = 0 + ((voltage-3.6)/(3.8-3.6))*(30-0)
-        
-        
+    else:
+        return voltage        
+       
         
     return battery_percentage
 
 
 if __name__ == "__main__":
     piracer = PiRacerStandard()
-
+    list = deque([0]*100)
     bus = dbus.SessionBus()
     service = bus.get_object("org.team4.Des02", "/CarInformation")
     car_interface = dbus.Interface(service, "org.team4.Des02.CarInformation")
 
     while 1:
-        battery = get_battery() 
-        print(float(battery))
+        list.popleft()
+        now_battery = get_battery() 
+        list.append(now_battery)
+        battery = max(list)
+        # print(float(battery))
         car_interface.setBattery(float(battery))
