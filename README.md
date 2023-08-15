@@ -4,7 +4,7 @@
 
 ## Architecture
 
-<p align="center"><img src="Documents/DES02 Architecture.svg" alt="Alt text" width="70%" height="70%" /></p>
+<p align="center"><img src="Documents/DES02 Architecture Transparent.svg" alt="Alt text" width="70%" height="70%" /></p>
 
 
 # Index
