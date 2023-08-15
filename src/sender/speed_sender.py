@@ -44,7 +44,7 @@ if __name__ == "__main__":
     service = bus.get_object("org.team4.Des02", "/CarInformation")
     car_interface = dbus.Interface(service, "org.team4.Des02.CarInformation")
 
-    queue = deque([0]*5)
+    queue = deque([0]*4)
 
     while 1:
         # print(queue) 
@@ -54,7 +54,7 @@ if __name__ == "__main__":
             speed_data = get_speed_can(data)
             queue.append(speed_data)
 
-            ave_value = sum(queue) / 10
+            ave_value = queue[0]*0.1 + queue[1]*0.2 + queue[2]*0.3 + queue[3]*0.4 
             print(speed_data)
             car_interface.setSpeed(ave_value)
         else:
