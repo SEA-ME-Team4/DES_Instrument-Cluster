@@ -2,6 +2,10 @@
 ## PiRacer instrument cluster Qt application running on RPi and receiving speed data from a speed sensor via CAN  
 </br>
 
+## Architecture
+
+<p align="center"><img src="Documents/DES02 Architecture.svg" alt="Alt text" width="70%" height="70%" /></p>
+
 
 # Index
 #### [Introduction](#introduction-1)
