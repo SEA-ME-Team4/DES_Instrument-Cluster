@@ -4,11 +4,11 @@
 
 ## Architecture
 
-<p align="center"><img src="Documents/DES02 Architecture Transparent.svg" alt="Alt text" width="70%" height="70%" /></p>
+<p align="center"><img src="Documents/DES02 Architecture.svg" alt="Alt text" width="70%" height="70%" /></p>
 
 
 ## Table of Contents
-### 1. [Hardware Settings](./Documents/Dbus.md)
+### 1. [Hardware Settings](./Documents/HardwareSettings.md)
 ### 2. [Cross Compile](./Documents/CrossCompile.md)
 ### 3. [Display](./Documents/Display.md)
 ### 4. [Qt Creator Configuration](./Documents/QtCreatorConfiguration.md)
