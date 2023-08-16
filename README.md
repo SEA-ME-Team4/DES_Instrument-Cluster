@@ -13,7 +13,7 @@
 ### 3. [Display](./Documents/Display.md)
 ### 4. [Qt Creator Configuration](./Documents/Qt-Creator-configuration.md)
 ### 5. [CAN Communication with CAN-HAT](./Documents/Dbus.md)
-### 6. [Get Sensor Data](./Documents/Get-sender-data.md)
+### 6. [Get Sensor Data](./Documents/GetSenderData.md)
 ### 7. [Dbus](./Documents/Dbus.md)
 ### 8. [Connect CPP to QML](./Documents/ConnectCPPtoQML.md)
 ### 9. [GUI(QML)](./Documents/Dbus.md)
