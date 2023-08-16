@@ -72,5 +72,5 @@
 
 ## **Reference**
 
-- [speed sensor](https://www.brainy-bits.com/post/how-to-use-a-speed-sensor-with-arduino)
-- [Arduino UNO R3](https://docs.arduino.cc/hardware/uno-rev3)
+1. [speed sensor](https://www.brainy-bits.com/post/how-to-use-a-speed-sensor-with-arduino)
+2. [Arduino UNO R3](https://docs.arduino.cc/hardware/uno-rev3)
