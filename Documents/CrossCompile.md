@@ -1,6 +1,6 @@
 # Cross Compilie Qt For Rpi and Ubuntu
 
-- Work on Ubuntu and make a cross-compiling environment so that compiled results are available on Raspberry Pi
+- Make Cross Compile environment so that compiled results are available on Raspberry Pi.
 
 ---
 

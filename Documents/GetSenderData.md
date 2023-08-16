@@ -1,11 +1,13 @@
 # Get Sender Data
 ## Table of Contents
 
-### 1. [Speed](#1-speed-data)
+### [Speed](#1-speed-data)
 
-### 2. [Battery](#2-battery-data)
+### [Battery](#2-battery-data)
 
-### 3. [Brake](#3-brake-data)
+### [Brake](#3-brake-data)
+
+---
 
 # 1. Speed Data
 
@@ -98,6 +100,8 @@ while 1:
             print("No CAN data recieved")
 ```
 
+---
+
 # 2. Battery Data
 
 - We used `get_battery_voltage` function which is placed in `piracer` package.
@@ -167,6 +171,8 @@ while 1:
         car_interface.setBattery(float(battery)) # send data to Dbus
 ```
 
+---
+
 # 3. Brake Data
 
 - We used `shawan_gamepad.read_data()` function which is also placed in `piracer` package.
@@ -201,3 +207,10 @@ while True:
             print("NO brake")
             car_interface.setBrake(False) # send data to Dbus
 ```
+
+---
+
+## **Reference**
+
+1. [Battery Specification](https://www.akkushop.de/de/3400mah-panasonic-18650-li-ion-akku-mit-eigener-schutzschaltung-ca.-69-x-1861mm-beachten/?gclid=Cj0KCQjw2eilBhCCARIsAG0Pf8vO9KMf3kPwGwAs5B6yAVukp_r2XorosHUAIDuSco5hoI0us5uJWfsaAjxJEALw_wcB)
+2. [Timeout Decoration](https://daeguowl.tistory.com/139)
