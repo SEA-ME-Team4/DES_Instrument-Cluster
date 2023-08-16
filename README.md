@@ -15,6 +15,6 @@
 ### 5. [CAN Communication with CAN-HAT](./Documents/Dbus.md)
 ### 6. [Get Sensor Data](./Documents/Get-sender-data.md)
 ### 7. [Dbus](./Documents/Dbus.md)
-### 8. [Connect CPP to QML](./Documents/Connect-CPP-to-QML.md)
+### 8. [Connect CPP to QML](./Documents/ConnectCPPtoQML.md)
 ### 9. [GUI(QML)](./Documents/Dbus.md)
 ### 10. [Exception Handling](./Documents/Exception-Handling.md)
