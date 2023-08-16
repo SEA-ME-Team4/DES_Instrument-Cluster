@@ -1,8 +1,6 @@
 # Hardware Settings
 
-생성자: Jaden Park
-생성 일시: 2023년 8월 14일 오후 10:43
-태그: 찐 완료
+
 
 ## ****Table of Contents****
 
