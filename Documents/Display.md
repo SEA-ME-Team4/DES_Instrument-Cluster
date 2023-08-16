@@ -1,3 +1,5 @@
+# Display
+
 ## 1. Hardware Connection
 
 Connect DSI interface of the display screen using 15PIN FPC cable.
