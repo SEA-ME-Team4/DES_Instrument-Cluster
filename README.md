@@ -1,6 +1,9 @@
 # **DES Project - Instrument Cluster**
-## PiRacer instrument cluster Qt application running on RPi and receiving speed data from a speed sensor via CAN  
+PiRacer instrument cluster Qt application running on RPi and receiving speed data from a speed sensor via CAN  
 </br>
+
+## Project Intro
+![Instrument_ Cluster](https://github.com/SEA-ME-Team4/DES_Instrument-Cluster/assets/106136905/3159be88-17f2-42da-b89c-02feb08ad04a)
 
 ## Architecture
 
