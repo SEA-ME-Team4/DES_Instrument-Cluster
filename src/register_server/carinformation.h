@@ -5,7 +5,7 @@
 #include <QElapsedTimer>
 #include <QTimer>
 
-#define MAX_INTERVAL 100
+#define MAX_INTERVAL 300
 
 class CarInformation : public QObject
 {
