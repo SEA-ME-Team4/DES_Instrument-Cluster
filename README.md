@@ -8,6 +8,8 @@
 
 
 # Index
+#### HW Setting.
+#### Cross Compiling
 #### [Introduction](#introduction-1)
 #### [Background Information](#background-information-1)
 #### [Project Goals & Objectives](#project-goals-and-objectives)
