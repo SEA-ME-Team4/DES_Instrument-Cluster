@@ -1,6 +1,6 @@
 # Connect CPP to QML
 
-# CPP Property setting
+## CPP Property setting
 
 ### 1. In `car2qml.h`, we set `variable`, `status of variable` and `status of dbus` connection.
 
@@ -46,7 +46,7 @@ Q_PROPERTY(bool dbusstatus READ getDbusStatus CONSTANT)
 
  
 
-# Connect to QML
+## Connect to QML
 
 ### 1. Expose C++ types to QML in `main.cpp`
 
