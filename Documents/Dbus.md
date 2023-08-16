@@ -8,6 +8,8 @@
 
 ### [Get Data from Dbus](#3-get-data-from-dbus)
 
+---
+
 # 1. Dbus Server Registration
 
 ## in `/register_server`
@@ -58,6 +60,8 @@ connection.registerObject("/CarInformation", carinfo) // Register Object
 connection.registerService("org.team4.Des02") // Register service(Bus's name)
 ```
 
+---
+
 # 2. Send sensor data to Dbus
 
 ## in `/sender`
@@ -91,6 +95,8 @@ car_interface = dbus.Interface(service, "org.team4.Des02.CarInformation") # Link
 ```python
 car_interface.setSpeed(speed_data)
 ```
+
+---
 
 # 3. Get data from Dbus
 

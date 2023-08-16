@@ -10,6 +10,8 @@
 
 ### [Result](#3-result)
 
+---
+
 # 1. Sensor
 
 ## **Speed Sensor** ↔ **Arduino**
@@ -29,6 +31,8 @@
 - **Method of securing to piracer**
 <img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/822aa544-8a16-4ddf-b4db-54842feba603" width="40%" height="40%">
 <img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/216f3f5e-9cf3-47b7-9b7c-09d7df98bf43" width="30%" height="30%">
+
+---
 
 # 2. CAN
 
@@ -57,11 +61,11 @@
 
 <img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/882a47cb-0234-4ff6-8e47-2e5545121728" width="30%" height="30%">
 
+---
 
 # 3. Result
 <img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/2909b3b2-587b-4c1c-a385-bfb83c2142b0" width="40%" height="40%">
 <img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/ff7cb31c-1165-4ee1-80f1-44ac5c93aacf" width="30%" height="30%">  
-
 
 
 ---

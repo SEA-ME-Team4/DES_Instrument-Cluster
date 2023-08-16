@@ -7,6 +7,8 @@
 
 ### [Brake](#3-brake-data)
 
+---
+
 # 1. Speed Data
 
 - When receiving message from CAN, We decode it and send it to Dbus.
@@ -98,6 +100,8 @@ while 1:
             print("No CAN data recieved")
 ```
 
+---
+
 # 2. Battery Data
 
 - We used `get_battery_voltage` function which is placed in `piracer` package.
@@ -166,6 +170,8 @@ while 1:
         battery = max(list) 
         car_interface.setBattery(float(battery)) # send data to Dbus
 ```
+
+---
 
 # 3. Brake Data
 

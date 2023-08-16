@@ -10,6 +10,8 @@
 
 ### [Instrument Cluster](#3-instrument-cluster)
 
+---
+
 # TIMER
 
 - Our system use Multiple Timer. First one is  `system_timer` in `register_server` and Second one is `app_timer` in `Car2Qml`, and these timer have different purposes.
@@ -17,7 +19,9 @@
 - In this way, Multiple application can share this fast (expensive) timer together.
 - `app_timer` is woking for check validity of Dbus Interface. It cannot be accomplished just with `system_timer`. Without `app_timer`, when `register_server` is broken, we cannot detect and display the status of `Interface` (Dbus status). Based on the purpose of `app_timer`, it doesn’t need to be fast, so we set slow (also cheap) timer here.
 
-# 1. register_server
+---
+
+# 1. Register Server
 
 ## (1) VariableStatusTimer
 
@@ -141,6 +145,8 @@ If timer and status satisfied condition (which means Timeout is occured), `emit 
 
 `sendTimeSpend` is emitted with every `timeout` of `system_timer`. It is just for update display.
 
+---
+
 # 2. Car2Qml
 
 ## (1) VariableStatus
@@ -226,6 +232,8 @@ void Car2Qml::checkDbusValid()
 But this function use `isValid` for check `interface`(Dbus status).
 
 It emits `dbusstatusChanged` signal with boolean decided by if statement.
+
+---
 
 # 3. Instrument Cluster
 
