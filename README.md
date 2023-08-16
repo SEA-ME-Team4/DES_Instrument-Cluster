@@ -17,4 +17,4 @@
 ### 7. [Dbus](./Documents/Dbus.md)
 ### 8. [Connect CPP to QML](./Documents/ConnectCPPtoQML.md)
 ### 9. [GUI(QML)](./Documents/Dbus.md)
-### 10. [Exception Handling](./Documents/Exception-Handling.md)
+### 10. [Exception Handling](./Documents/ExceptionHandling.md.md)
