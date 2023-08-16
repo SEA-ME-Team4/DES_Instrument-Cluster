@@ -1,68 +1,64 @@
 # GUI (QML)
 
-생성자: Minchan Jung
-생성 일시: 2023년 8월 16일 오후 4:33
-태그: 진행중
-
 ## ****Table of Contents****
 
-### [1. **LCD window**](https://www.notion.so/GUI-QML-e493d2f5468b45778fb35a36313d8ed9?pvs=21)
+### [LCD window](#1-lcd-window)
 
-### [2. **Flow board**](https://www.notion.so/GUI-QML-e493d2f5468b45778fb35a36313d8ed9?pvs=21)
+### [Flow board](#2-flow-board)
 
-### 3. **Display by Status**
+### [Display by Status](#3-display-by-status)
 
-# **LCD window**
+# 1. LCD window
 
-![Untitled](GUI%20(QML)%20e493d2f5468b45778fb35a36313d8ed9/Untitled.png)
+<img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/658aecc0-0895-4b53-94e0-f36aa14efdd6" width="30%" height="30%">
 
-# **Flow board**
+# 2. Flow board
 
-![Untitled](GUI%20(QML)%20e493d2f5468b45778fb35a36313d8ed9/Untitled%201.png)
+<img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/feac3518-a81d-45d5-ad6d-de9fbd00d640" width="30%" height="30%">
 
-# **Display by Status**
+# 3. Display by Status
 
-1. **Neutral**
+**1. Neutral**
     
-    ![Untitled](GUI%20(QML)%20e493d2f5468b45778fb35a36313d8ed9/Untitled%202.png)
-    
-    The State Indicator lights up white with speed, brake, and battery. And Gear-N light up white
-    
-2. **All sensor turn on**
-    
-    ![Untitled](GUI%20(QML)%20e493d2f5468b45778fb35a36313d8ed9/Untitled%203.png)
-    
-    The State Indicator of speed, brake, battery, temperature has a white light. And Gear-N light up white
-    
+<img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/aa9b5e41-38ad-4eb6-b799-fd71ed29dfd9" width="80%" height="80%">
 
-1. **DbusTimeout**
+* The State Indicator lights up white with speed, brake, and battery. And Gear-N light up white
+ 
+**2. All sensor turn on**
     
-    ![Untitled](GUI%20(QML)%20e493d2f5468b45778fb35a36313d8ed9/Untitled%204.png)
+<img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/0f3ed479-bb7b-4d27-a031-feb2216d03c1" width="80%" height="80%">
     
-    The State Indicator of speed, brake, battery, temperature has a red light.  And Gear-N light up white
+* The State Indicator of speed, brake, battery, temperature has a white light. And Gear-N light up white
     
 
-1. **Gear-D**
+**3. Dbus Timeout**
     
-    ![Untitled](GUI%20(QML)%20e493d2f5468b45778fb35a36313d8ed9/Untitled%205.png)
+<img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/b05ae43f-104a-4a3b-a18b-b141e5df5e65" width="80%" height="80%">
     
-    The State Indicator of speed, brake, battery, temperature has a white light. And Gear-D light up white
-    
-
-1. **Gear-P**
-    
-    ![Untitled](GUI%20(QML)%20e493d2f5468b45778fb35a36313d8ed9/Untitled%206.png)
-    
-    The State Indicator of speed, brake, battery, temperature has a white light. And Gear-P light up white
+* The State Indicator of speed, brake, battery, temperature has a red light.  And Gear-N light up white
     
 
-1. **Gear-R**
+**4. Gear-D**
     
-    ![Untitled](GUI%20(QML)%20e493d2f5468b45778fb35a36313d8ed9/Untitled%207.png)
+<img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/550705e4-59de-458f-9871-34d43a343ede" width="80%" height="80%">
     
-    The State Indicator of speed, brake, battery, temperature has a white light. And Gear-R light up white
+* The State Indicator of speed, brake, battery, temperature has a white light. And Gear-D light up white
     
 
+**5. Gear-P**
+    
+<img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/26d56bd8-8d48-4622-a804-12e4cd957914" width="80%" height="80%">
+    
+* The State Indicator of speed, brake, battery, temperature has a white light. And Gear-P light up white
+
+
+**6. Gear-R**
+    
+<img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/d469fe20-546b-409d-9669-5cc0b14cb1ba" width="80%" height="80%">
+    
+* The State Indicator of speed, brake, battery, temperature has a white light. And Gear-R light up white
+    
+#
 ## Reference
 
 - [Qt Quick Ultralite Automotive Cluster Demo (Image Source)](https://doc.qt.io/QtForMCUs-2.5/quickultralite-automotive-example.html)
