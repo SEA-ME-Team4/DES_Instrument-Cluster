@@ -8,7 +8,7 @@
 
 
 ## Table of Contents
-### 1. [Hardware Settings](./Documents/Dbus.md)
+### 1. [Hardware Settings](./Documents/HardwareSettings.md)
 ### 2. [Cross Compile](./Documents/CrossCompile.md)
 ### 3. [Display](./Documents/Display.md)
 ### 4. [Qt Creator Configuration](./Documents/QtCreatorConfiguration.md)
