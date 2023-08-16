@@ -11,7 +11,7 @@
 ### 1. [Hardware Settings](./Documents/Dbus.md)
 ### 2. [Cross Compile](./Documents/CrossCompile.md)
 ### 3. [Display](./Documents/Display.md)
-### 4. [Qt Creator Configuration](./Documents/Qt-Creator-configuration.md)
+### 4. [Qt Creator Configuration](./Documents/QtCreatorConfiguration.md)
 ### 5. [CAN Communication with CAN-HAT](./Documents/Dbus.md)
 ### 6. [Get Sensor Data](./Documents/GetSenderData.md)
 ### 7. [Dbus](./Documents/Dbus.md)
