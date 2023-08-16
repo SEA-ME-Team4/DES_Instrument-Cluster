@@ -1,10 +1,10 @@
 ## Table of Contents
 
-### 1. [Speed](Speed-Data)
+### 1. [Speed](#1-speed-data)
 
-### 2. [Battery](Batter-Data)
+### 2. [Battery](#2-battery-data)
 
-### 3. [Brake](Brake-Data)
+### 3. [Brake](#3-brake-data)
 
 # 1. Speed Data
 
