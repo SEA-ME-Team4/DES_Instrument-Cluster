@@ -4,11 +4,11 @@
 
 ### 1. [TIMER](#TIMER)
 
-### 2. [Register Server](#1.-register_server)
+### 2. [Register Server](#1-register_server)
 
-### 3. [Car2Qml](#2.-car2qml)
+### 3. [Car2Qml](#2-car2qml)
 
-### 4. [Instrument Cluster](#3.-instrument-cluster)
+### 4. [Instrument Cluster](#3-instrument-cluster)
 
 # TIMER
 
