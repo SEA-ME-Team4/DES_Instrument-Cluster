@@ -1,26 +1,20 @@
 # CAN Communication with CAN-HAT
 
-생성자: Daekyung La
-생성 일시: 2023년 8월 16일 오전 9:44
-태그: 찐 완료
+## Table of Contents
 
-## ****Table of Contents****
+### [2-Channel CAN BUS FD Shield for Raspberry Pi](#1-2-channel-can-bus-fd-shield-for-raspberry-pi)
 
-### 1. [2 Channel CAN BUS FD Shield for Raspberry Pi](https://www.notion.so/CAN-Communication-with-CAN-HAT-6b3f5eb435cc486eba6f4117370d457d?pvs=21)
+### [CAN-BUS Shield](#2-can-bus-shield)
 
-### 2. [CAN-BUS Shield V2.0](https://www.notion.so/CAN-Communication-with-CAN-HAT-6b3f5eb435cc486eba6f4117370d457d?pvs=21)
+### [Connection](#3-connection)
 
-### 3. [Connection](https://www.notion.so/CAN-Communication-with-CAN-HAT-6b3f5eb435cc486eba6f4117370d457d?pvs=21)
 
-# 1.  **2 Channel CAN BUS FD Shield for Raspberry Pi**
-
-![Untitled](CAN%20Communication%20with%20CAN-HAT%206b3f5eb435cc486eba6f4117370d457d/Untitled.png)
+# 1. 2-Channel CAN BUS FD Shield for Raspberry Pi
+<img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/7072aaed-0c48-491b-aa3a-742db765beb5" width="40%" height="40%">
 
 ### hardware overview
-
-![Untitled](CAN%20Communication%20with%20CAN-HAT%206b3f5eb435cc486eba6f4117370d457d/Untitled%201.png)
-
-![Untitled](CAN%20Communication%20with%20CAN-HAT%206b3f5eb435cc486eba6f4117370d457d/Untitled%202.png)
+<img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/b272349a-80a0-4378-8fa2-fada72e20c47" width="30%" height="30%">
+<img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/c733a5ce-cadd-4622-88c9-68749b62277c" width="30%" height="30%">
 
 ### Software Setting
 
@@ -85,11 +79,10 @@ candump can0
 
 - You can test the CAN-BUS by connecting two channels by itself.
 
-# 2. **CAN-BUS Shield V2.0**
+# 2. CAN-BUS Shield
+<img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/01d26db3-31cc-4eab-9dd3-65c9be43a2d6" width="40%" height="40%">
+<img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/9cf456ab-7b56-4df9-8a70-38737aea002b" width="40%" height="40%">
 
-![Untitled](CAN%20Communication%20with%20CAN-HAT%206b3f5eb435cc486eba6f4117370d457d/Untitled%203.png)
-
-![Untitled](CAN%20Communication%20with%20CAN-HAT%206b3f5eb435cc486eba6f4117370d457d/Untitled%204.png)
 
 ### hardware overview
 
@@ -113,7 +106,7 @@ candump can0
 1. Intstall an  [Arduino library](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/),  download **[Seeed_Arduino_CAN](https://github.com/Seeed-Studio/Seeed_Arduino_CAN)**
 2. Open the **send** example (**File > Examples > Seeed_Arduino_CAN > send**) and upload to the **master**.
 
-![Untitled](CAN%20Communication%20with%20CAN-HAT%206b3f5eb435cc486eba6f4117370d457d/Untitled%205.png)
+<img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/a779748b-fe88-4558-90b1-66c4377ef29e" width="40%" height="40%">
 
 or copy the following to the Arduino IDE and upload:
 
@@ -255,7 +248,7 @@ void loop() {
 
 ## Reference
 
-- [Raspberry Pi](https://pinout.xyz/pinout/pin3_gpio2/)
+- **[Raspberry Pi](https://pinout.xyz/pinout/pin3_gpio2/)**
 - **[2 Channel CAN BUS FD Shield for Raspberry Pi](https://wiki.seeedstudio.com/2-Channel-CAN-BUS-FD-Shield-for-Raspberry-Pi/)**
 - **[How to install an Arduino library](https://wiki.seeedstudio.com/How_to_install_Arduino_Library/)**
 - **[CAN-BUS Shield V2.0](https://wiki.seeedstudio.com/CAN-BUS_Shield_V2.0/)**
