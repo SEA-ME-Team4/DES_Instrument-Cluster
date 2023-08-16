@@ -6,9 +6,9 @@
 
 ### 2. [Register Server](#1.-register_server)
 
-### 3. [Car2Qml](#2.-Car2Qml)
+### 3. [Car2Qml](#2.-car2qml)
 
-### 4. [Instrument Cluster](#3.-Instrument-Cluster)
+### 4. [Instrument Cluster](#3.-instrument-cluster)
 
 # TIMER
 
