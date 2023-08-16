@@ -10,11 +10,14 @@
 
 # 1. LCD window
 
-<img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/658aecc0-0895-4b53-94e0-f36aa14efdd6" width="30%" height="30%">
+<img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/658aecc0-0895-4b53-94e0-f36aa14efdd6" width="90%" height="90%">
+
+
+
 
 # 2. Flow board
 
-<img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/feac3518-a81d-45d5-ad6d-de9fbd00d640" width="30%" height="30%">
+<img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/feac3518-a81d-45d5-ad6d-de9fbd00d640" width="80%" height="80%">
 
 # 3. Display by Status
 
