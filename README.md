@@ -56,7 +56,7 @@ PiRacer instrument cluster Qt application running on RPi and receiving speed dat
 ### 2. [Cross Compile](./Documents/CrossCompile.md)
 ### 3. [Display](./Documents/Display.md)
 ### 4. [Qt Creator Configuration](./Documents/QtCreatorConfiguration.md)
-### 5. [CAN Communication with CAN-HAT](./Documents/Dbus.md)
+### 5. [CAN Communication with CAN-HAT](./Documents/CANCommunicationwithCAN-HAT.md)
 ### 6. [Get Sensor Data](./Documents/GetSenderData.md)
 ### 7. [Dbus](./Documents/Dbus.md)
 ### 8. [Connect CPP to QML](./Documents/ConnectCPPtoQML.md)
