@@ -74,7 +74,6 @@
 ### 2. **CAN-BUS Shield V2.0**
 
 ![Untitled](CAN%20Communication%206b3f5eb435cc486eba6f4117370d457d/Untitled%203.png)
-
 ![Untitled](CAN%20Communication%206b3f5eb435cc486eba6f4117370d457d/Untitled%204.png)
 
 - hardware overview
