@@ -5,7 +5,7 @@ We didn't use touch function, so we didn't connect 4pin (Without I2C connetion)
 
 ## 2. Software Setting
 
-```bash
+```shell
 sudo apt install git
 git clone https://github.com/waveshare/Waveshare-DSI-LCD
 cd Waveshare-DSI-LCD/
@@ -23,7 +23,7 @@ sudo reboot
 
 Display showed a vertical screen.
 
-```bash
+```shell
 sudo nano /boot/cmdline.txt
 ```
 
@@ -35,7 +35,7 @@ video=DSI-1:400x1280M@60,rotate=90
 
 Of course you can choose the angle. (0, 90, 180, 270)
 
-```bash
+```shell
 sudo reboot
 ```
 
@@ -63,7 +63,7 @@ Check your display shows horizental CLI window.
 
 If your system has some problem of initial boot or display, check that /boot/config.txt 
 
-```bash
+```shell
 sudo nano /boot/config.txt
 # If this file doesn’t have ‘dtoverlay=vc4-kms-v3d’, then add it.
 ```
