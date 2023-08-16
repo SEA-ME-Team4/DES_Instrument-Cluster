@@ -1,10 +1,10 @@
 ## Table of Contents
 
-### 1. [Speed](https://www.notion.so/Get-sensor-data-228454fb942b4009a7c61cdf75834865?pvs=21)
+### 1. [Speed](Speed-Data)
 
-### 2. [Battery](https://www.notion.so/Get-sensor-data-228454fb942b4009a7c61cdf75834865?pvs=21)
+### 2. [Battery](Batter-Data)
 
-### 3. [Brake](https://www.notion.so/Get-sensor-data-228454fb942b4009a7c61cdf75834865?pvs=21)
+### 3. [Brake](Brake-Data)
 
 # 1. Speed Data
 
