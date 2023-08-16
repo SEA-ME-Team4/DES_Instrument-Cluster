@@ -58,13 +58,13 @@ qmlRegisterType<Car2Qml>("Car2Qml", 1, 0, "Car2Qml");
 
 (1) Import `Car2Qml` Class as Property of QML in `instrumentCluster.qml`
 
-```cpp
+```jsx
  import Car2Qml 1.0
 ```
 
 (2) Define Property and Connect Signal of Class in `instrumentCluster.qml`
 
-```cpp
+```jsx
 Car2Qml{
         id: carinfo
 
@@ -89,7 +89,7 @@ Car2Qml{
 
 ### 3. About property Initialization  in `instrumentCluster.qml`
 
-```cpp
+```jsx
 property int speed: 0
 property int battery: 0
 property int temp: 0

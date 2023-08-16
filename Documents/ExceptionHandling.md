@@ -231,7 +231,7 @@ It emits `dbusstatusChanged` signal with boolean decided by if statement.
 
 - In `InstrumentCluster.qml`, `Car2Qml` is property that makes qml can connect with cpp.
 
-```cpp
+```jsx
 Car2Qml{
     id: carinfo
 

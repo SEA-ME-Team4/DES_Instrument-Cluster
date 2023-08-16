@@ -12,7 +12,7 @@
 
 # 1. Sensor
 
-## **Speed Sensor** ↔ ****Arduino
+## **Speed Sensor** ↔ **Arduino**
 <img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/d177e90f-7602-4053-802d-995181650f3f" width="40%" height="40%">
 <img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/c0c27c2d-3770-4bc4-b95c-22fe92a38086" width="40%" height="40%">
 
