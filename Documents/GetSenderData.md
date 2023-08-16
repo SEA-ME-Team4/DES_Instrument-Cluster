@@ -1,11 +1,11 @@
 # Get Sender Data
 ## Table of Contents
 
-### 1. [Speed](#1-speed-data)
+### [Speed](#1-speed-data)
 
-### 2. [Battery](#2-battery-data)
+### [Battery](#2-battery-data)
 
-### 3. [Brake](#3-brake-data)
+### [Brake](#3-brake-data)
 
 # 1. Speed Data
 

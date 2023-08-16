@@ -2,13 +2,13 @@
 
 ## Table of Contents
 
-### 1. [TIMER](#TIMER)
+### [TIMER](#timer)
 
-### 2. [Register Server](#1-register_server)
+### [Register Server](#1-register_server)
 
-### 3. [Car2Qml](#2-car2qml)
+### [Car2Qml](#2-car2qml)
 
-### 4. [Instrument Cluster](#3-instrument-cluster)
+### [Instrument Cluster](#3-instrument-cluster)
 
 # TIMER
 

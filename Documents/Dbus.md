@@ -2,11 +2,11 @@
 
 ## Table of Contents
 
-### 1. [Dbus server registration](#1-dbus-server-registration)
+### [Dbus Server Registration](#1-dbus-server-registration)
 
-### 2. [Send sensor data to Dbus](#2-send-sensor-data-to-dbus)
+### [Send Sensor Data to Dbus](#2-send-sensor-data-to-dbus)
 
-### 3. [Get data from Dbus](#3-get-data-from-dbus)
+### [Get Data from Dbus](#3-get-data-from-dbus)
 
 # 1. Dbus Server Registration
 
