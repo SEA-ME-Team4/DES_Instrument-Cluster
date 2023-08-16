@@ -6,9 +6,9 @@
 
 ## ****Table of Contents****
 
-### 1. [Sensor](Hardware%20Settings%206d710bea7df545039646edb3f5f0697a.md)
+### [Sensor](1-**Sensor**1)
 
-### 2. [CAN](Hardware%20Settings%206d710bea7df545039646edb3f5f0697a.md)
+### 2.-[CAN](can-1)
 
 ### 3. [Result](Hardware%20Settings%206d710bea7df545039646edb3f5f0697a.md)
 
