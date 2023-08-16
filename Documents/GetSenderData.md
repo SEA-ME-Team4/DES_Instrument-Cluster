@@ -207,3 +207,10 @@ while True:
             print("NO brake")
             car_interface.setBrake(False) # send data to Dbus
 ```
+
+---
+
+## **Reference**
+
+1. [Battery Specification](https://www.akkushop.de/de/3400mah-panasonic-18650-li-ion-akku-mit-eigener-schutzschaltung-ca.-69-x-1861mm-beachten/?gclid=Cj0KCQjw2eilBhCCARIsAG0Pf8vO9KMf3kPwGwAs5B6yAVukp_r2XorosHUAIDuSco5hoI0us5uJWfsaAjxJEALw_wcB)
+2. [Timeout Decoration](https://daeguowl.tistory.com/139)
