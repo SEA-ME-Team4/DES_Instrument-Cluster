@@ -8,6 +8,7 @@
 
 ### [Connection](#3-connection)
 
+---
 
 # 1. 2-Channel CAN BUS FD Shield for Raspberry Pi
 <img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/7072aaed-0c48-491b-aa3a-742db765beb5" width="40%" height="40%">
@@ -78,6 +79,8 @@ candump can0
 ```
 
 - You can test the CAN-BUS by connecting two channels by itself.
+  
+---
 
 # 2. CAN-BUS Shield
 <img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/01d26db3-31cc-4eab-9dd3-65c9be43a2d6" width="40%" height="40%">
@@ -155,6 +158,8 @@ void loop() {
     SERIAL.println("CAN BUS sendMsgBuf ok!");
 }
 ```
+
+---
 
 # 3. connection
 
