@@ -3,10 +3,10 @@ import QtQuick 2.0
 Rectangle {
     id: statusindicator
     property double dbusopacity: (parent.dbus_timeout)? 1 : 0
-    property double speedopacity: (!parent.speed_timeout || parent.dbus_timeout)? 0.7 : 0.3
-    property double brakeopacity: (!parent.brake_timeout || parent.dbus_timeout)? 0.7 : 0.3
-    property double batteryopacity: (!parent.battery_timeout || parent.dbus_timeout)? 0.7 : 0.3
-    property double tempopacity: (!parent.temp_timeout || parent.dbus_timeout)? 0.7 : 0.3
+    property double speedopacity: (!parent.speed_timeout || parent.dbus_timeout)? 1 : 0.3
+    property double brakeopacity: (!parent.brake_timeout || parent.dbus_timeout)? 1 : 0.3
+    property double batteryopacity: (!parent.battery_timeout || parent.dbus_timeout)? 1 : 0.3
+    property double tempopacity: (!parent.temp_timeout || parent.dbus_timeout)? 1 : 0.3
     color: "black"
 
     Image {
