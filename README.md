@@ -60,5 +60,5 @@ PiRacer instrument cluster Qt application running on RPi and receiving speed dat
 ### 6. [Get Sensor Data](./Documents/GetSenderData.md)
 ### 7. [Dbus](./Documents/Dbus.md)
 ### 8. [Connect CPP to QML](./Documents/ConnectCPPtoQML.md)
-### 9. [GUI(QML)](./Documents/Dbus.md)
+### 9. [GUI(QML)](./Documents/GUI(QML).md)
 ### 10. [Exception Handling](./Documents/ExceptionHandling.md)
