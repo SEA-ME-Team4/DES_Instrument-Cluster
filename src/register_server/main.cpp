@@ -13,25 +13,19 @@ int main(int argc, char *argv[])
     CarInformation *carinfo = new CarInformation();
     new CarInformationAdaptor(carinfo);
 
-    while (1) {
-        if (connection.registerObject("/CarInformation", carinfo)){
-            qDebug()<<"Register Object Success";
-            break;
-        }
-        else {
-            qDebug()<<"Register Object Failed";
-        }
+    if (connection.registerObject("/CarInformation", carinfo)){
+        qDebug()<<"Register Object Success";
+    }
+    else {
+        qDebug()<<"Register Object Failed";
+    }
+    if (connection.registerService("org.team4.Des02")){
+        qDebug()<<"Register Service Success";
+    }
+    else {
+        qDebug()<<"Register Service Failed";
     }
 
-    while (1) {
-        if (connection.registerService("org.team4.Des02")){
-            qDebug()<<"Register Service Success";
-            break;
-        }
-        else {
-            qDebug()<<"Register Service Failed";
-        }
-    }
 
     return a.exec();
 }

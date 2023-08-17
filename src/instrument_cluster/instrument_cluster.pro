@@ -35,7 +35,7 @@ HEADERS += \
 
 # Default rules for deployment.
 target.file = instrument_cluster
-target.path = /home/team4/qt_test
+target.path = /home/team4/des02
 INSTALLS += target
 
 DISTFILES +=
