@@ -4,7 +4,7 @@
 
 ### [LCD window](#1-lcd-window)
 
-### [Flow board](#2-flow-board)
+### [Flow board](#2-flow-and-relation-between-qml-files)
 
 ### [Display by Status](#3-display-by-status)
 
@@ -18,7 +18,7 @@
 
 ---
 
-# 2. Flow board
+# 2. Flow and Relation between QML files
 
 <img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/feac3518-a81d-45d5-ad6d-de9fbd00d640" width="80%" height="80%">
 
