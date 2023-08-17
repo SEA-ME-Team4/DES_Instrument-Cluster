@@ -140,7 +140,7 @@ def get_battery():
 
 - With this information, we made a function by using linear interpolation.
 
-<img width="349" alt="Untitled (12)" src="https://github.com/SEA-ME/SEA-ME-course-book/assets/106136905/a57a58e5-898a-4223-a9e4-980ea8733bd2">
+<img width="498" alt="battery_function" src="https://github.com/SEA-ME-Team4/DES_Instrument-Cluster/assets/106136905/4dbdf7e3-6285-4e60-8e5f-ee31db3e284b">
 
 ## Data processing
 
