@@ -112,6 +112,7 @@ from piracer.vehicles import PiRacerStandard
 
 def get_battery():
     voltage = piracer.get_battery_voltage() / 3
+    print(voltage)
     if(voltage>4.2):
         battery_percentage = 100
     elif(voltage>=4.1):
@@ -125,8 +126,9 @@ def get_battery():
     elif(voltage>=3.6):
         battery_percentage = 0 + ((voltage-3.6)/(3.8-3.6))*(30-0)
     else:
-	battery_percentage = 0
-
+        battery_percentage = 0  
+       
+        
     return battery_percentage
 ```
 
