@@ -39,6 +39,7 @@ PiRacer instrument cluster Qt application running on RPi and receiving speed dat
 - Python3
 - QML
 - Arduino Sketch
+- Shell Script
 
 ## Tool
 
