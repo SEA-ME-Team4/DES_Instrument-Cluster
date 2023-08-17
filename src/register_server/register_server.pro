@@ -25,6 +25,6 @@ SOURCES += \
         main.cpp
 
 # Default rules for deployment.
-target.file = server_register
-target.path = /home/team4/qt_test
+target.file = register_server
+target.path = /home/team4/des02
 INSTALLS += target
