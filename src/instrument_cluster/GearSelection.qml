@@ -5,9 +5,9 @@ Rectangle {
     property color color: "#f7f2f2"
     property int update_interval: 100
     property double gearP: (parent.speed===0 && parent.brake)? 1 : 0.5
-    property double gearR: (parent.speed<0)? 1 : 0.5
+    property double gearR: (parent.speed!==0 && parent.brake)? 1 : 0.5
     property double gearN: (parent.speed===0 && !parent.brake)? 1 : 0.5
-    property double gearD: (parent.speed>0)? 1 : 0.5
+    property double gearD: (parent.speed!==0 && !parent.brake)? 1 : 0.5
 
     Image {
         x: 0
