@@ -7,7 +7,7 @@ PiRacer instrument cluster Qt application running on RPi and receiving speed dat
 
 ## Architecture
 
-<p align="center"><img src="Documents/DES02 Architecture.svg" alt="Alt text" width="70%" height="70%" /></p>
+<p align="center"><img src="Documents/DES02Architecture.svg" alt="Alt text" width="70%" height="70%" /></p>
 
 
 ## Equipment
