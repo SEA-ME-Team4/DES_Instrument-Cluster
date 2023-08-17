@@ -4,7 +4,7 @@
 
 ### [LCD window](#1-lcd-window)
 
-### [Flow board](#2-flow-and-relation-between-qml-files)
+### [Flow of GUI](#2-flow-and-relation-between-qml-files)
 
 ### [Display by Status](#3-display-by-status)
 
