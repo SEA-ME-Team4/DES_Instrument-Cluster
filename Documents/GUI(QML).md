@@ -20,7 +20,7 @@
 
 # 2. Flow and Relation between QML files
 
-<img src = "https://github.com/SEA-ME/SEA-ME-course-book/assets/97211801/feac3518-a81d-45d5-ad6d-de9fbd00d640" width="80%" height="80%">
+<p align="center"><img src = "/Documents/QMLArchitecture.svg" width="80%" height="80%"></p>
 
 ---
 
