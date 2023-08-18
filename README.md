@@ -53,6 +53,7 @@ PiRacer instrument cluster Qt application running on RPi and receiving speed dat
 ---
 
 ## Table of Contents
+### 0. [Presentation](./Documents/des02.pdf)
 ### 1. [Hardware Settings](./Documents/HardwareSettings.md)
 ### 2. [Cross Compile](./Documents/CrossCompile.md)
 ### 3. [Display](./Documents/Display.md)
