@@ -54,5 +54,5 @@ if __name__ == '__main__':
         else:
             print("NO brake")
             car_interface.setBrake(False)
-        time.sleep(0.05)
+        time.sleep(0.01)
 
