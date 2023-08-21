@@ -1,8 +1,0 @@
-<RCC>
-    <qresource prefix="/images">
-        <file>field.png</file>
-        <file>left.png</file>
-        <file>needle.png</file>
-        <file>right.png</file>
-    </qresource>
-</RCC>
